@@ -47,22 +47,23 @@
         color: #ffffff;
         text-decoration: none;
       }
-     .group {
+      .group {
         padding: 20px 0 40px;
-       .group__name {
+        &__name {
           font-size: 15px;
         } 
-       .group__message {
+        &__message {
           font-size: 11px;
           margin-top: 5px;
         }
-      }
-      .group__a {
-        padding: 20px 0 40px;
-       .group__name {
-          font-size: 15px;
-        } 
-       .group__message {
+        &__a { 
+          padding: 20px 0 40px;
+         .group__name {
+            font-size: 15px;
+          }       
+        }
+
+        &__message {
           font-size: 11px;
           margin-top: 5px;
         }
