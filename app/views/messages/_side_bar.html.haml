@@ -1,0 +1,23 @@
+.chat__side
+  .side__header
+    .side__box
+      .user__name
+        test
+      .side__btn
+        = link_to "#", class: "edit" do
+          = icon('far', 'edit', class: "side__btn--icon")
+        = link_to "#" do
+          = icon('fas', 'cog', class: "side__btn--icon")
+  .groups__list
+    .group
+      %a{:href => "#"}
+        .group__name
+          test1
+        .group__message
+          まだメッセージがありません。
+    .group__a
+      %a{:href => "#"}
+        .group__name
+          test2
+        .group__message
+          まだメッセージがありません。

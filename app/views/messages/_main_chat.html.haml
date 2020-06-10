@@ -1,0 +1,61 @@
+.chat__main
+  .main__header
+    .main__group
+      .main__groupName
+        test3
+      .main__memberList
+        Member :
+        .main__member
+          test1
+    %a.mainHeader__editBtn{:href => "#"}Edit
+
+  .message__field
+    .message__box
+      .message__info
+        .messageInfo__name
+          test4
+        .messageInfo__date
+          2020年6月9日 18時28分
+      .message
+        %p.Message__content
+          test5
+    .message__box
+      .message__info
+        .messageInfo__name
+          test4
+        .messageInfo__date
+          2020年6月9日 18時28分
+      .message
+        %p.Message__content
+          test5
+    .message__box
+      .message__info
+        .messageInfo__name
+          test4
+        .messageInfo__date
+          2020年6月9日 18時28分
+      .message
+        %p.Message__content
+          test5
+    .message__box
+      .message__info
+        .messageInfo__name
+          test4
+        .messageInfo__date
+          2020年6月9日 18時28分
+      .message
+        %p.Message__content
+          test5
+  
+  .form
+    %form.new__message
+      .input__box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit__btn"}
+
+  
+
+  
