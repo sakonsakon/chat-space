@@ -11,8 +11,8 @@
   .groups__list
     - current_user.groups.each do |group|
       .group
-        %a{:href => "#"}
+        = link_to group_messages_path(group) do
           .group__name
             = group.name
           .group__message
-            まだメッセージがありません。
+            = group.show_last_message
