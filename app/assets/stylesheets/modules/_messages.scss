@@ -43,6 +43,7 @@
       background-color: #2f3e51;
       height: calc(100vh - 100px);
       padding: 0 20px;
+      overflow: scroll;
       a {
         color: #ffffff;
         text-decoration: none;
@@ -120,12 +121,12 @@
         margin-bottom: 46px;
        .message__info {
           display: flex;
-         .messageInfo__name {
+         .message__info__name {
             color: #434a54;
             font-size: 16px;
             font-weight: bold;
           }
-         .messageInfo__date {
+         .message__info__date {
             color: #999;
             font-size: 12px;
             padding-left: 10px;
@@ -144,27 +145,27 @@
       background-color: #d2d2d2;
       height: 90px;
       padding: 20px 50px 20px 40px;
-      form.new__message {
+      .new__message {
         display: flex;
         justify-content: space-between;
        .input__box {
           width: 100%;
           background-color: #fff;
           position: relative;
-          input {
+         .input-box__text {
             border: none;
             height: 50px;
             width: 100%;
             padding: 0 45px 0 15px;
           }
-          label {
+         .input-box__image {
             height: 50px;
             position: absolute;
             right: 10px;
             line-height: 50px;
             font-size: 25px;
-          .input-box__image__file {
-            display: none;
+           .input-box__image__file {
+              display: none;
             } 
           }
         }
