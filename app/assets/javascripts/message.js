@@ -44,8 +44,6 @@ $(function(){
     e.preventDefault();
     let formData = new FormData(this);
     let url = $(this).attr('action');
-    console.log(formData)
-    console.log(url)
     $.ajax({
       url: url,
       type: 'POST',
@@ -57,8 +55,7 @@ $(function(){
     .done(function(data){
       let html = buildHTML(data);
       $('.message__field').append(html).animate({ scrollTop: $('.message__field')[0].scrollHeight});
-      $('.submit__btn').prop('disabled', false);    
-      // removeAttr('disabled')
+      $('.submit__btn').prop('disabled', false);
       $('form')[0].reset();
     })
     .fail(function() {
